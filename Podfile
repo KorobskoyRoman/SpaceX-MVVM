@@ -10,5 +10,6 @@ target 'SpaceX+MVVM' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxDataSources'
+  pod 'SDWebImage'
 
 end

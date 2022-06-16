@@ -26,7 +26,9 @@ class AppCoordinator: Coordinator {
     }
     
     func showMain() {
-        let vc = MainViewController()
+        let networkService = NetworkService()
+        let viewModel = MainViewModel(launchesNetworkService: networkService)
+        let vc = MainViewController(viewModel: viewModel)
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }
