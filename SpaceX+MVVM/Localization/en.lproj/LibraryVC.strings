@@ -1,0 +1,18 @@
+/* 
+  LibraryVC.strings
+  SpaceXInfo
+
+  Created by Roman Korobskoy on 02.05.2022.
+  
+*/
+
+"title" = "Favorites";
+
+"lauchStatusFailed" = "Launch failed";
+"lauchStatusSuccessed" = "Launch successed";
+
+"launchDate" = "Start date:";
+
+"nameFilter" = "Name";
+"dateFilter" = "Date";
+"successFilter" = "Success";

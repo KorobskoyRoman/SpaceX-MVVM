@@ -26,7 +26,15 @@ class AppCoordinator: Coordinator {
     }
     
     func showMain() {
-        let vc = MainViewController()
+        let viewModel = MainViewModel()
+        let vc = MainViewController(viewModel: viewModel)
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func showDetail(_ launch: Result) {
+        let viewModel = DetailViewModel(launch: launch)
+        let vc = DetailViewController(viewModel: viewModel)
         vc.coordinator = self
         navigationController.pushViewController(vc, animated: true)
     }
