@@ -9,6 +9,8 @@ import UIKit
 
 class AppCoordinator: Coordinator {
     
+    var isLoggedIn: Bool = false
+    
     var navigationController: UINavigationController
     private let window: UIWindow
     
@@ -21,14 +23,28 @@ class AppCoordinator: Coordinator {
         if #available(iOS 13.0, *) {
             window.overrideUserInterfaceStyle = .light
         }
-        
-        showMain()
+        if isLoggedIn {
+            showMain()
+            isLoggedIn.toggle()
+        } else {
+            showAuth()
+        }
+    }
+    
+    func showAuth() {
+        let viewModel = AuthViewModel()
+        let vc = AuthViewController(viewModel: viewModel)
+        viewModel.isLoggedIn = isLoggedIn
+        vc.coordinator = self
+        vc.viewModel = viewModel
+        navigationController.pushViewController(vc, animated: true)
     }
     
     func showMain() {
         let viewModel = MainViewModel()
         let vc = MainViewController(viewModel: viewModel)
         vc.coordinator = self
+        navigationController.viewControllers.removeAll()
         navigationController.pushViewController(vc, animated: true)
     }
     
