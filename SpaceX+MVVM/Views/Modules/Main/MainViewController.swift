@@ -57,7 +57,6 @@ class MainViewController: UIViewController {
 
 extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(viewModel.launches[indexPath.row].name)
         coordinator?.showDetail(viewModel.launches[indexPath.row])
     }
 }
