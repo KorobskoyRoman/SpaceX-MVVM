@@ -10,7 +10,7 @@ import UIKit
 class MainViewController: UIViewController {
 
     private var tableView: UITableView!
-    private lazy var userInfoBarButton = createCustomButton(selector: #selector(userInfoBarButtonTapped))
+    private lazy var userInfoBarButton = createCustomButton(selector: #selector(userInfoBarButtonTapped), image: "person.fill")
     
     weak var coordinator: AppCoordinator?
     private var viewModel: MainViewModel

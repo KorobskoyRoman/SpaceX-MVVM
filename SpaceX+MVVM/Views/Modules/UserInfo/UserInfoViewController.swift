@@ -14,6 +14,8 @@ class UserInfoViewController: UIViewController {
     var viewModel: UserInfoViewModel
     let userView = UserInfoView()
     
+    private lazy var logOutButton = createCustomButton(selector: #selector(logOutButtonTapped), text: "Log out")
+    
     init(viewModel: UserInfoViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -31,5 +33,13 @@ class UserInfoViewController: UIViewController {
     private func setupView() {
         view.addSubview(userView)
         userView.frame = view.bounds
+        title = viewModel.userData?.firstName
+        navigationItem.rightBarButtonItem = logOutButton
+    }
+}
+
+extension UserInfoViewController {
+    @objc private func logOutButtonTapped() {
+        self.coordinator?.showAuth()
     }
 }

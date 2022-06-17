@@ -37,6 +37,9 @@ class AppCoordinator: Coordinator {
         viewModel.isLoggedIn = isLoggedIn
         vc.coordinator = self
         vc.viewModel = viewModel
+        if navigationController.viewControllers.count != 0 {
+            navigationController.viewControllers.removeAll()
+        }
         navigationController.pushViewController(vc, animated: true)
     }
     
