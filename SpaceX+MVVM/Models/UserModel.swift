@@ -23,6 +23,6 @@ extension User {
     static var data = [User(email: "123", password: "123")]
 }
 
-extension User {
+extension UserData {
     static let userInfo = UserData(firstName: "Roman", secondName: "Korobskoy", phone: "+7(918)111-11-11", age: "25")
 }

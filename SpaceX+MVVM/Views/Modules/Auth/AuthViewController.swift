@@ -43,6 +43,10 @@ extension AuthViewController {
             coordinator?.isLoggedIn = viewModel.isLoggedIn
             coordinator?.showMain()
         }
+        else {
+            authView.loginLabel.text = "Incorrect user data!"
+            authView.loginLabel.textColor = .systemRed
+        }
     }
 }
 

@@ -38,6 +38,9 @@
 		9CC825F7285CC9A900F700EC /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC825F6285CC9A900F700EC /* AuthView.swift */; };
 		9CC825F9285CCBD300F700EC /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC825F8285CCBD300F700EC /* ExtensionViewController.swift */; };
 		9CC825FB285CCC3C00F700EC /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC825FA285CCC3C00F700EC /* UIStackView+.swift */; };
+		9CC825FE285CE88B00F700EC /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC825FD285CE88B00F700EC /* UserInfoViewController.swift */; };
+		9CC82600285CE89500F700EC /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC825FF285CE89500F700EC /* UserInfoViewModel.swift */; };
+		9CC82603285CE8A200F700EC /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC82602285CE8A200F700EC /* UserInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +83,9 @@
 		9CC825F6285CC9A900F700EC /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		9CC825F8285CCBD300F700EC /* ExtensionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
 		9CC825FA285CCC3C00F700EC /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		9CC825FD285CE88B00F700EC /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		9CC825FF285CE89500F700EC /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
+		9CC82602285CE8A200F700EC /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		BD07DE64BFCD1B6C2C90B157 /* Pods-SpaceX+MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX+MVVM.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX+MVVM/Pods-SpaceX+MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		E17FB3F1BD53EA84D58F1475 /* Pods-SpaceX+MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX+MVVM.release.xcconfig"; path = "Target Support Files/Pods-SpaceX+MVVM/Pods-SpaceX+MVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				9CC825F0285CC4B700F700EC /* Auth */,
+				9CC825FC285CE87000F700EC /* UserInfo */,
 				9C65060F285B7FAD004E6E11 /* Main */,
 				9CC825E6285BD56B00F700EC /* Detail */,
 			);
@@ -301,6 +308,24 @@
 			isa = PBXGroup;
 			children = (
 				9CC825F6285CC9A900F700EC /* AuthView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9CC825FC285CE87000F700EC /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				9CC82601285CE89A00F700EC /* View */,
+				9CC825FD285CE88B00F700EC /* UserInfoViewController.swift */,
+				9CC825FF285CE89500F700EC /* UserInfoViewModel.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		9CC82601285CE89A00F700EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9CC82602285CE8A200F700EC /* UserInfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -436,12 +461,15 @@
 				9CC825BB285BAF2500F700EC /* UIColor+.swift in Sources */,
 				9CC825B7285BAEB600F700EC /* MainCell.swift in Sources */,
 				9CC825F2285CC50200F700EC /* AuthViewModel.swift in Sources */,
+				9CC825FE285CE88B00F700EC /* UserInfoViewController.swift in Sources */,
 				9CC825E0285BBAF100F700EC /* HeartButton.swift in Sources */,
 				9C6505F8285B7465004E6E11 /* MainViewController.swift in Sources */,
 				9CC825DE285BBA9500F700EC /* String+.swift in Sources */,
+				9CC82603285CE8A200F700EC /* UserInfoView.swift in Sources */,
 				9C65060C285B753E004E6E11 /* Coordinator.swift in Sources */,
 				9C6505F4285B7465004E6E11 /* AppDelegate.swift in Sources */,
 				9CC825EF285CC45B00F700EC /* UserModel.swift in Sources */,
+				9CC82600285CE89500F700EC /* UserInfoViewModel.swift in Sources */,
 				9C6505F6285B7465004E6E11 /* SceneDelegate.swift in Sources */,
 				9CC825F4285CC50D00F700EC /* AuthViewController.swift in Sources */,
 				9CC825B4285BAEA900F700EC /* MainViewModel.swift in Sources */,
