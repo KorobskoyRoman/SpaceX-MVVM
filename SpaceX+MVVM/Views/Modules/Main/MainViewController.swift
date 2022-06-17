@@ -10,9 +10,11 @@ import UIKit
 class MainViewController: UIViewController {
 
     private var tableView: UITableView!
+    private lazy var userInfoBarButton = createCustomButton(selector: #selector(userInfoBarButtonTapped))
     
     weak var coordinator: AppCoordinator?
     private var viewModel: MainViewModel
+    private var userModel = UserInfoViewModel()
     
     init(viewModel: MainViewModel) {
         self.viewModel = viewModel
@@ -52,6 +54,7 @@ class MainViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.backgroundColor = .mainWhite()
+        navigationItem.rightBarButtonItem = userInfoBarButton
     }
 }
 
@@ -74,5 +77,11 @@ extension MainViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
+    }
+}
+
+extension MainViewController {
+    @objc private func userInfoBarButtonTapped() {
+        coordinator?.showProfile(userModel)
     }
 }

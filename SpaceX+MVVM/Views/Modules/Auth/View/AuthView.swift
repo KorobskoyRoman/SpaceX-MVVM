@@ -46,7 +46,7 @@ class AuthView: UIView {
         return view
     }()
     
-    private let loginLabel: UILabel = { //настраиваем лейбл
+    let loginLabel: UILabel = { //настраиваем лейбл
         let label = UILabel()
         label.text = "Log In"
         label.translatesAutoresizingMaskIntoConstraints = false

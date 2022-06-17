@@ -44,14 +44,22 @@ class AppCoordinator: Coordinator {
         let viewModel = MainViewModel()
         let vc = MainViewController(viewModel: viewModel)
         vc.coordinator = self
-        navigationController.viewControllers.removeAll()
+        navigationController.viewControllers.removeLast() // визуальный баг из-за этого
         navigationController.pushViewController(vc, animated: true)
     }
     
-    func showDetail(_ launch: Result) {
-        let viewModel = DetailViewModel(launch: launch)
+    func showDetail(_ viewModel: Result) {
+        let viewModel = DetailViewModel(launch: viewModel)
         let vc = DetailViewController(viewModel: viewModel)
         vc.coordinator = self
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func showProfile(_ viewModel: UserInfoViewModel) {
+        let viewModel = UserInfoViewModel()
+        let vc = UserInfoViewController(viewModel: viewModel)
+        vc.coordinator = self
+        vc.viewModel = viewModel
         navigationController.pushViewController(vc, animated: true)
     }
 }
