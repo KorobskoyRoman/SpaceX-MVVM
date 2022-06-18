@@ -47,8 +47,12 @@ class AppCoordinator: Coordinator {
         let viewModel = MainViewModel()
         let vc = MainViewController(viewModel: viewModel)
         vc.coordinator = self
-        navigationController.viewControllers.removeLast() // визуальный баг из-за этого
+        let authVm = AuthViewModel()
+        let authVc = AuthViewController(viewModel: authVm)
+//        navigationController.viewControllers.removeLast() // визуальный баг из-за этого
         navigationController.pushViewController(vc, animated: true)
+        navigationController.viewControllers = [vc]
+        window.rootViewController = isLoggedIn ? navigationController : authVc
     }
     
     func showDetail(_ viewModel: Result) {
