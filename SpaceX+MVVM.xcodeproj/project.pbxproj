@@ -41,6 +41,7 @@
 		9CC825FE285CE88B00F700EC /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC825FD285CE88B00F700EC /* UserInfoViewController.swift */; };
 		9CC82600285CE89500F700EC /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC825FF285CE89500F700EC /* UserInfoViewModel.swift */; };
 		9CC82603285CE8A200F700EC /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC82602285CE8A200F700EC /* UserInfoView.swift */; };
+		9CC826052865091500F700EC /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC826042865091500F700EC /* AuthCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		9CC825FD285CE88B00F700EC /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		9CC825FF285CE89500F700EC /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
 		9CC82602285CE8A200F700EC /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		9CC826042865091500F700EC /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		BD07DE64BFCD1B6C2C90B157 /* Pods-SpaceX+MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX+MVVM.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX+MVVM/Pods-SpaceX+MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		E17FB3F1BD53EA84D58F1475 /* Pods-SpaceX+MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX+MVVM.release.xcconfig"; path = "Target Support Files/Pods-SpaceX+MVVM/Pods-SpaceX+MVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +161,7 @@
 			children = (
 				9C65060A285B7531004E6E11 /* Protocols */,
 				9C650608285B7493004E6E11 /* AppCoordinator.swift */,
+				9CC826042865091500F700EC /* AuthCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				9CC825E0285BBAF100F700EC /* HeartButton.swift in Sources */,
 				9C6505F8285B7465004E6E11 /* MainViewController.swift in Sources */,
 				9CC825DE285BBA9500F700EC /* String+.swift in Sources */,
+				9CC826052865091500F700EC /* AuthCoordinator.swift in Sources */,
 				9CC82603285CE8A200F700EC /* UserInfoView.swift in Sources */,
 				9C65060C285B753E004E6E11 /* Coordinator.swift in Sources */,
 				9C6505F4285B7465004E6E11 /* AppDelegate.swift in Sources */,

@@ -13,6 +13,7 @@ class AppCoordinator: Coordinator {
     
     var navigationController: UINavigationController
     private let window: UIWindow
+    private lazy var authCoordinator = AuthCoordinator()
     
     init(window: UIWindow, navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -32,15 +33,7 @@ class AppCoordinator: Coordinator {
     }
     
     func showAuth() {
-        let viewModel = AuthViewModel()
-        let vc = AuthViewController(viewModel: viewModel)
-        viewModel.isLoggedIn = isLoggedIn
-        vc.coordinator = self
-        vc.viewModel = viewModel
-        if navigationController.viewControllers.count != 0 {
-            navigationController.viewControllers.removeAll()
-        }
-        navigationController.pushViewController(vc, animated: true)
+        authCoordinator.showAuth(navigationController, isLoggedIn, self)
     }
     
     func showMain() {
