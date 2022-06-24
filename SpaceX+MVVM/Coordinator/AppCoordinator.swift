@@ -14,6 +14,7 @@ class AppCoordinator: Coordinator {
     var navigationController: UINavigationController
     private let window: UIWindow
     private lazy var authCoordinator = AuthCoordinator()
+    private lazy var userInfoCoordinator = UserInfoCoordinator()
     
     init(window: UIWindow, navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -56,10 +57,6 @@ class AppCoordinator: Coordinator {
     }
     
     func showProfile(_ viewModel: UserInfoViewModel) {
-        let viewModel = UserInfoViewModel()
-        let vc = UserInfoViewController(viewModel: viewModel)
-        vc.coordinator = self
-        vc.viewModel = viewModel
-        navigationController.pushViewController(vc, animated: true)
+        userInfoCoordinator.showProfile(viewModel, navigationController, self)
     }
 }
