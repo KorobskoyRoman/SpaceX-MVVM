@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AuthCoordinator {
+class AuthCoordinator: AuthenticationCoordinator {
     func showAuth(_ navigationController: UINavigationController,_ isLoggedIn: Bool,_ coordinator: AppCoordinator) {
         let viewModel = AuthViewModel()
         let vc = AuthViewController(viewModel: viewModel)

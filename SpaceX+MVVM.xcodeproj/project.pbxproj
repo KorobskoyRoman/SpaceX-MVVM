@@ -42,6 +42,8 @@
 		9CC82600285CE89500F700EC /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC825FF285CE89500F700EC /* UserInfoViewModel.swift */; };
 		9CC82603285CE8A200F700EC /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC82602285CE8A200F700EC /* UserInfoView.swift */; };
 		9CC826052865091500F700EC /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC826042865091500F700EC /* AuthCoordinator.swift */; };
+		9CC82607286644B300F700EC /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC82606286644B300F700EC /* Helpers.swift */; };
+		9CC826092866450800F700EC /* UserInfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC826082866450800F700EC /* UserInfoCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +90,8 @@
 		9CC825FF285CE89500F700EC /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
 		9CC82602285CE8A200F700EC /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
 		9CC826042865091500F700EC /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		9CC82606286644B300F700EC /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		9CC826082866450800F700EC /* UserInfoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCoordinator.swift; sourceTree = "<group>"; };
 		BD07DE64BFCD1B6C2C90B157 /* Pods-SpaceX+MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX+MVVM.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX+MVVM/Pods-SpaceX+MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		E17FB3F1BD53EA84D58F1475 /* Pods-SpaceX+MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX+MVVM.release.xcconfig"; path = "Target Support Files/Pods-SpaceX+MVVM/Pods-SpaceX+MVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -147,7 +151,6 @@
 				9C650607285B7487004E6E11 /* Coordinator */,
 				9CC825C1285BB03C00F700EC /* Models */,
 				9CC825E3285BBB9D00F700EC /* Views */,
-				9CC825DF285BBAF100F700EC /* HeartButton.swift */,
 				9CC825B8285BAEF100F700EC /* Helpers */,
 				9CC825BE285BAFF300F700EC /* Services */,
 				9CC825C4285BBA6E00F700EC /* Localization */,
@@ -162,6 +165,7 @@
 				9C65060A285B7531004E6E11 /* Protocols */,
 				9C650608285B7493004E6E11 /* AppCoordinator.swift */,
 				9CC826042865091500F700EC /* AuthCoordinator.swift */,
+				9CC826082866450800F700EC /* UserInfoCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -170,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				9C65060B285B753E004E6E11 /* Coordinator.swift */,
+				9CC82606286644B300F700EC /* Helpers.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				9C65060E285B7FA6004E6E11 /* Modules */,
+				9CC825DF285BBAF100F700EC /* HeartButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -465,6 +471,7 @@
 				9CC825B7285BAEB600F700EC /* MainCell.swift in Sources */,
 				9CC825F2285CC50200F700EC /* AuthViewModel.swift in Sources */,
 				9CC825FE285CE88B00F700EC /* UserInfoViewController.swift in Sources */,
+				9CC826092866450800F700EC /* UserInfoCoordinator.swift in Sources */,
 				9CC825E0285BBAF100F700EC /* HeartButton.swift in Sources */,
 				9C6505F8285B7465004E6E11 /* MainViewController.swift in Sources */,
 				9CC825DE285BBA9500F700EC /* String+.swift in Sources */,
@@ -476,6 +483,7 @@
 				9CC82600285CE89500F700EC /* UserInfoViewModel.swift in Sources */,
 				9C6505F6285B7465004E6E11 /* SceneDelegate.swift in Sources */,
 				9CC825F4285CC50D00F700EC /* AuthViewController.swift in Sources */,
+				9CC82607286644B300F700EC /* Helpers.swift in Sources */,
 				9CC825B4285BAEA900F700EC /* MainViewModel.swift in Sources */,
 				9CC825FB285CCC3C00F700EC /* UIStackView+.swift in Sources */,
 				9CC825E8285BD57E00F700EC /* DetailViewModel.swift in Sources */,
