@@ -13,8 +13,10 @@ class AppCoordinator: Coordinator {
     
     var navigationController: UINavigationController
     private let window: UIWindow
+    
     private lazy var authCoordinator = AuthCoordinator()
     private lazy var userInfoCoordinator = UserInfoCoordinator()
+    private lazy var mainScreenCoordinator = MainscreenCoordinator()
     
     init(window: UIWindow, navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -39,14 +41,7 @@ class AppCoordinator: Coordinator {
     
     func showMain() {
         let viewModel = MainViewModel()
-        let vc = MainViewController(viewModel: viewModel)
-        vc.coordinator = self
-        let authVm = AuthViewModel()
-        let authVc = AuthViewController(viewModel: authVm)
-//        navigationController.viewControllers.removeLast() // визуальный баг из-за этого
-        navigationController.pushViewController(vc, animated: true)
-        navigationController.viewControllers = [vc]
-        window.rootViewController = isLoggedIn ? navigationController : authVc
+        mainScreenCoordinator.showMain(viewModel, self, isLoggedIn, navigationController, window)
     }
     
     func showDetail(_ viewModel: Result) {

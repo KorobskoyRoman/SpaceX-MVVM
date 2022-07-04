@@ -18,3 +18,11 @@ protocol UserInformationCoordinator {
                      _ navigationController: UINavigationController,
                      _ coordinator: AppCoordinator)
 }
+
+protocol MainScreenCoordinator {
+    func showMain(_ viewModel: MainViewModel,
+                  _ coordinator: AppCoordinator,
+                  _ isLoggedIn: Bool,
+                  _ navigationController: UINavigationController,
+                  _ window: UIWindow)
+}
