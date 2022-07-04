@@ -44,6 +44,7 @@
 		9CC826052865091500F700EC /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC826042865091500F700EC /* AuthCoordinator.swift */; };
 		9CC82607286644B300F700EC /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC82606286644B300F700EC /* Helpers.swift */; };
 		9CC826092866450800F700EC /* UserInfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC826082866450800F700EC /* UserInfoCoordinator.swift */; };
+		9CC8260B2873569E00F700EC /* MainScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC8260A2873569E00F700EC /* MainScreenCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		9CC826042865091500F700EC /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		9CC82606286644B300F700EC /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		9CC826082866450800F700EC /* UserInfoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCoordinator.swift; sourceTree = "<group>"; };
+		9CC8260A2873569E00F700EC /* MainScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCoordinator.swift; sourceTree = "<group>"; };
 		BD07DE64BFCD1B6C2C90B157 /* Pods-SpaceX+MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX+MVVM.debug.xcconfig"; path = "Target Support Files/Pods-SpaceX+MVVM/Pods-SpaceX+MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		E17FB3F1BD53EA84D58F1475 /* Pods-SpaceX+MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX+MVVM.release.xcconfig"; path = "Target Support Files/Pods-SpaceX+MVVM/Pods-SpaceX+MVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,6 +168,7 @@
 				9C650608285B7493004E6E11 /* AppCoordinator.swift */,
 				9CC826042865091500F700EC /* AuthCoordinator.swift */,
 				9CC826082866450800F700EC /* UserInfoCoordinator.swift */,
+				9CC8260A2873569E00F700EC /* MainScreenCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				9CC825EA285BD59200F700EC /* DetailViewController.swift in Sources */,
 				9CC825ED285BD5A600F700EC /* DetailView.swift in Sources */,
 				9C650609285B7493004E6E11 /* AppCoordinator.swift in Sources */,
+				9CC8260B2873569E00F700EC /* MainScreenCoordinator.swift in Sources */,
 				9CC825C3285BB04F00F700EC /* LaunchModel.swift in Sources */,
 				9CC825BD285BAF3B00F700EC /* UIFont+.swift in Sources */,
 				9CC825F7285CC9A900F700EC /* AuthView.swift in Sources */,
